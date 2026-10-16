@@ -1,43 +1,85 @@
+# UTS Web 1 — Sistem Pemesanan Menu Kantin
 
-# UTS Web I - Pemesanan Kantin Kampus
+## Identitas Pengembang
 
-## Identitas
-- Nama: Nur Fadilah
-- NIM: 2501268
-- Kelas: 25M31
+- **Nama:** Nur Fadilah
+- **NIM:** 25012068
+- **Kelas:** 25M31
 
-## Deskripsi Aplikasi
-Aplikasi Pemesanan Kantin Kampus dibuat menggunakan PHP native tanpa database. Pengguna dapat melihat dan mencari menu, menambahkan pesanan ke keranjang, serta melihat subtotal, diskon, dan total pembayaran.
+## Deskripsi Proyek
 
-## Fitur
-- Daftar menu menggunakan array PHP.
-- Pencarian menu menggunakan GET.
-- Pemesanan dan validasi menggunakan POST.
-- Keranjang belanja menggunakan session.
-- Penghapusan item dan pengosongan keranjang.
-- Perhitungan subtotal, diskon, dan total akhir.
-- Redirect dan flash message.
-- Preferensi kategori menggunakan cookie selama 7 hari.
+Aplikasi web pemesanan menu kantin yang dibuat menggunakan PHP Native. Aplikasi ini menyediakan daftar menu, pencarian menu, filter kategori, pengelolaan keranjang, validasi jumlah pesanan, dan preferensi favorit.
 
-## Kebutuhan
-- XAMPP dengan PHP
-- Browser
-- Git
-- Akun GitHub
+## Teknologi yang Digunakan
 
-## Cara Menjalankan
-1. Simpan project di dalam folder htdocs.
-2. Jalankan Apache melalui XAMPP.
-3. Buka browser.
-4. Akses http://localhost/web1/uts-web1-NIM/
+- PHP Native
+- HTML
+- CSS
+- JavaScript (jika digunakan pada implementasi)
+- Session PHP dan Cookie
+- XAMPP
+- Git dan GitHub
 
-## Struktur File
-- index.php: halaman daftar menu.
-- keranjang.php: halaman keranjang.
-- proses.php: proses pesanan.
-- data/menu.php: data menu.
-- includes/fungsi.php: fungsi aplikasi.
-- includes/header.php: header halaman.
-- includes/footer.php: footer halaman.
-- assets/style.css: tampilan aplikasi.
-- dokumentasi/pengujian/README.md: catatan pengujian.
+## Fitur Aplikasi
+
+1. Menampilkan daftar menu kantin.
+2. Mencari menu berdasarkan kata kunci.
+3. Memfilter menu berdasarkan kategori.
+4. Menambahkan menu ke keranjang.
+5. Memvalidasi jumlah pesanan.
+6. Menghapus menu dari keranjang.
+7. Mengosongkan keranjang.
+8. Menyimpan preferensi favorit menggunakan cookie, jika fitur tersebut diterapkan.
+
+## Struktur Folder
+
+```text
+UTS_Web1_25012068/
+├── assets/
+│   └── style.css
+├── data/
+│   └── menu.php
+├── dokumentasi/
+│   └── Pengujian/
+├── includes/
+│   ├── fungsi.php
+│   ├── header.php
+│   └── footer.php
+├── index.php
+├── keranjang.php
+├── proses.php
+└── README.md
+```
+
+## Cara Menjalankan Aplikasi
+
+1. Instal dan buka XAMPP.
+2. Simpan folder project di dalam direktori `C:\xampp\htdocs\web1\UTS_Web1_25012068`.
+3. Jalankan Apache melalui XAMPP Control Panel.
+4. Buka browser.
+5. Akses alamat berikut:
+
+   `http://localhost/web1/UTS_Web1_25012068/`
+
+## Pengujian Aplikasi
+
+Pengujian dilakukan untuk memeriksa fitur-fitur aplikasi, antara lain:
+
+- Daftar menu ditampilkan dengan benar.
+- Pencarian menu dengan hasil ditemukan dan tidak ditemukan.
+- Validasi jumlah pesanan kosong, negatif, dan melebihi batas.
+- Penambahan menu ke keranjang.
+- Penghapusan salah satu menu.
+- Pengosongan keranjang.
+- Filter kategori makanan dan minuman.
+- Penyimpanan preferensi favorit apabila tersedia.
+
+Bukti pengujian dapat dilihat pada folder `dokumentasi/Pengujian/`.
+
+## Repository GitHub
+
+[UTS_Web1_25012068](https://github.com/novavaee-ui/UTS_Web1_25012068)
+
+## Informasi
+
+Proyek ini dibuat untuk memenuhi tugas UTS mata kuliah Web 1.
